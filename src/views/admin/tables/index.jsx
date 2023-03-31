@@ -1,37 +1,46 @@
-import CheckTable from "./components/CheckTable";
 
 import {
-  columnsDataDevelopment,
-  columnsDataCheck,
   columnsDataColumns,
   columnsDataComplex,
 } from "./variables/columnsData";
-import tableDataDevelopment from "./variables/tableDataDevelopment.json";
-import tableDataCheck from "./variables/tableDataCheck.json";
 import tableDataColumns from "./variables/tableDataColumns.json";
 import tableDataComplex from "./variables/tableDataComplex.json";
-import DevelopmentTable from "./components/DevelopmentTable";
 import ColumnsTable from "./components/ColumnsTable";
 import ComplexTable from "./components/ComplexTable";
 import Table1 from "./components/Table1";
 import Table2 from "./components/Table2";
 
+import Img from "../../../assets/img/profile/image1.png"
+import Table3 from "./components/Table3";
+import Table4 from "./components/Table4";
+import Table6 from "./components/Table6";
+import Table7 from "./components/Table7";
+import Glass from "components/glass";
+
 const Tables = () => {
   return (
 
     <div>
-      <div><Table1></Table1></div>
-      <div className="mt-5"><Table2></Table2></div>
-      <div className="mt-5 grid h-full grid-cols-1 gap-5 md:grid-cols-2">
-        <ColumnsTable
-          columnsData={columnsDataColumns}
-          tableData={tableDataColumns}
-        />
+      <div className="mb-5"><Table6 /></div>
+      {/* <div className="mb-5"><Table1 /></div> */}
+      <div className="mb-5"><Table2 /></div>
+      <div className="mb-5"><Table3 /></div>
+      <div className="mb-5"><Table4 /></div>
+      <div className="mb-5"><Table7 /></div>
+      <div className="mb-5 grid h-full grid-cols-1 gap-5 md:grid-cols-2">
+        <Glass>
+          <ColumnsTable
+            columnsData={columnsDataColumns}
+            tableData={tableDataColumns}
+          />
+        </Glass>
 
-        <ComplexTable
-          columnsData={columnsDataComplex}
-          tableData={tableDataComplex}
-        />
+        <Glass>
+          <ComplexTable
+            columnsData={columnsDataComplex}
+            tableData={tableDataComplex}
+          />
+        </Glass>
       </div>
       <div className="flex justify-center mt-5">
         <div className="flex justify-center space-x-1 dark:text-gray-100">

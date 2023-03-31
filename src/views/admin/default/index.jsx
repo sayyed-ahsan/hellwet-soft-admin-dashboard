@@ -12,10 +12,12 @@ import Widget from "components/widget/Widget";
 import CheckTable from "views/admin/default/components/CheckTable";
 import ComplexTable from "views/admin/default/components/ComplexTable";
 import DailyTraffic from "views/admin/default/components/DailyTraffic";
-import TaskCard from "views/admin/default/components/TaskCard";
-import tableDataCheck from "./variables/tableDataCheck.json";
 import tableDataComplex from "./variables/tableDataComplex.json";
 import Discover from "./components/Discover";
+import Glass from "components/glass";
+import ChartOne from "./components/Chart1";
+import ChartThree from "./components/Chart3";
+import MapOne from "./components/Mpa1";
 // ------
 // import { BsBagHeart } from 'react-icons/bs';
 // import { BiDollar } from 'react-icons/bi';
@@ -27,6 +29,8 @@ const Dashboard = () => {
   return (
     <div>
       {/* Card widget */}
+      {/* <MapOne></MapOne> */}
+      <ChartOne />
       <div className="mt-3 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 3xl:grid-cols-6">
         <Widget
           icon={<MdBarChart className="h-7 w-7" />}
@@ -67,7 +71,7 @@ const Dashboard = () => {
       {/* Tables & Charts */}
       <div className="mt-5 grid grid-cols-1 gap-5 xl:grid-cols-2">
         {/* Check Table */}
-        <Discover />
+        <ChartThree />
 
         {/* Traffic chart & Pie Chart */}
 
@@ -83,11 +87,12 @@ const Dashboard = () => {
           tableData={tableDataComplex}
         />
 
-        {/* Task chart & Calendar */}
 
-        <div className="grid grid-cols-1 gap-5 rounded-[20px] flex justify-center">
-          <MiniCalendar />
-        </div>
+
+        <Glass>
+          <MiniCalendar></MiniCalendar>
+        </Glass>
+
       </div>
     </div>
 

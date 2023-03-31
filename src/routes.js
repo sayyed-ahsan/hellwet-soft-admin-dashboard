@@ -10,6 +10,11 @@ import Gallery from "views/admin/gallery/index.jsx";
 import Team from "views/admin/team/index.jsx";
 import Blogs from "views/admin/blog/index.jsx";
 import Customes from "views/admin/customers/index.jsx";
+import PublishBlog from "views/admin/publishBlog/index.jsx"
+import FAQ from "views/admin/faq/index.jsx"
+import Clients from "views/admin/clients/index.jsx"
+import Calendar from "views/admin/calendar/index.jsx"
+import Invoice from "views/admin/invoice/index.jsx"
 
 // Auth Imports
 import SignIn from "views/auth/SignIn";
@@ -33,7 +38,14 @@ const routes = [
     component: <MainDashboard />,
   },
   {
-    name: "NFT Marketplace",
+    name: "Clients",
+    layout: "/admin",
+    path: "clients",
+    icon: <MdPerson className="h-6 w-6" />,
+    component: <Clients />,
+  },
+  {
+    name: "Marketplace",
     layout: "/admin",
     path: "nft-marketplace",
     icon: <MdOutlineShoppingCart className="h-6 w-6" />,
@@ -46,6 +58,22 @@ const routes = [
     path: "gallery",
     icon: <MdOutlineShoppingCart className="h-6 w-6" />,
     component: <Gallery></Gallery>,
+    secondary: true,
+  },
+  {
+    name: "Calendar",
+    layout: "/admin",
+    path: "calendar",
+    icon: <MdOutlineShoppingCart className="h-6 w-6" />,
+    component: <Calendar />,
+    secondary: true,
+  },
+  {
+    name: "Invoivce",
+    layout: "/admin",
+    path: "invoice",
+    icon: <MdOutlineShoppingCart className="h-6 w-6" />,
+    component: <Invoice />,
     secondary: true,
   },
   {
@@ -93,6 +121,13 @@ const routes = [
     ]
   },
   {
+    name: "Publish Blogs",
+    layout: "/admin",
+    path: "publish",
+    icon: <MdPerson className="h-6 w-6" />,
+    component: <PublishBlog />,
+  },
+  {
     name: "Profile",
     layout: "/admin",
     path: "profile",
@@ -133,6 +168,14 @@ const routes = [
     path: "team",
     icon: <MdOutlineShoppingCart className="h-6 w-6" />,
     component: <Team></Team>,
+    secondary: true,
+  },
+  {
+    name: "FAQ",
+    layout: "/admin",
+    path: "faq",
+    icon: <MdOutlineShoppingCart className="h-6 w-6" />,
+    component: <FAQ />,
     secondary: true,
   }
 ];

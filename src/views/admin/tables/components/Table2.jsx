@@ -1,14 +1,15 @@
+import Glass from 'components/glass';
 import React from 'react';
 
 const Table2 = () => {
     return (
-        <div>
+        <Glass>
             <div className="overflow-x-auto">
-                <table className="table w-full">
+                <table className=" bg-primaryLight dark:bg-primaryDark dark:text-darkText rounded-2xl w-full">
                     {/* head */}
-                    <thead>
+                    <thead >
                         <tr>
-                            <th>Img</th>
+                            <th className='my-5 block'>Img</th>
                             <th>Name</th>
                             <th>Job</th>
                             <th>Favorite Color</th>
@@ -28,6 +29,7 @@ const Table2 = () => {
                             <td>Quality Control Specialist</td>
                             <td>Blue</td>
                         </tr>
+                        <div className='mb-3'></div>
                         {/* row 2 */}
                         <tr className="hover">
                             <th>
@@ -41,6 +43,7 @@ const Table2 = () => {
                             <td>Desktop Support Technician</td>
                             <td>teal</td>
                         </tr>
+                        <div className='mb-3'></div>
                         {/* row 3 */}
                         <tr>
                             <th>
@@ -54,6 +57,7 @@ const Table2 = () => {
                             <td>Tax Accountant</td>
                             <td>Red</td>
                         </tr>
+                        <div className='mb-3'></div>
                         {/* row 1 */}
                         <tr>
                             <th>
@@ -67,6 +71,7 @@ const Table2 = () => {
                             <td>Quality Control Specialist</td>
                             <td>Blue</td>
                         </tr>
+                        <div className='mb-3'></div>
                         {/* row 2 */}
                         <tr className="hover">
                             <th>
@@ -80,6 +85,7 @@ const Table2 = () => {
                             <td>Desktop Support Technician</td>
                             <td>teal</td>
                         </tr>
+                        <div className='mb-3'></div>
                         {/* row 3 */}
                         <tr>
                             <th>
@@ -93,6 +99,7 @@ const Table2 = () => {
                             <td>Tax Accountant</td>
                             <td>Red</td>
                         </tr>
+                        <div className='mb-3'></div>
                         {/* row 1 */}
                         <tr>
                             <th>
@@ -106,6 +113,7 @@ const Table2 = () => {
                             <td>Quality Control Specialist</td>
                             <td>Blue</td>
                         </tr>
+                        <div className='mb-3'></div>
                         {/* row 2 */}
                         <tr className="hover">
                             <th>
@@ -119,6 +127,7 @@ const Table2 = () => {
                             <td>Desktop Support Technician</td>
                             <td>teal</td>
                         </tr>
+                        <div className='mb-3'></div>
                         {/* row 3 */}
                         <tr>
                             <th>
@@ -132,10 +141,11 @@ const Table2 = () => {
                             <td>Tax Accountant</td>
                             <td>Red</td>
                         </tr>
+                        <div className='mb-3'></div>
                     </tbody>
                 </table>
             </div>
-        </div>
+        </Glass>
     );
 };
 

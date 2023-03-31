@@ -2,7 +2,7 @@ import Card from "components/card";
 
 const Widget = ({ icon, title, subtitle }) => {
   return (
-    <Card extra="!flex-row flex-grow items-center rounded-[20px]">
+    <Card extra="!flex-row flex-grow items-center rounded-[20px] glass">
       <div className="ml-[18px] flex h-[90px] w-auto flex-row items-center">
         <div className="rounded-full bg-secounderyLight shadow-lg shadow-indigo-500/50    bg-secounderyLight p-3 dark:bg-secounderyDark">
           <span className="flex items-center text-brandLight dark:text-darkText">

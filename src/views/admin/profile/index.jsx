@@ -9,17 +9,24 @@ import { BsCloudCheck } from "react-icons/bs";
 import { MdFileUpload } from "react-icons/md";
 
 import { MdModeEditOutline } from "react-icons/md";
+import ShereProfile from "./components/ShereProfile";
 
 const ProfileOverview = () => {
   return (
     <div className="flex w-full flex-col gap-5">
+      <div className='rounded-2xl glass p-5'>
+        <Banner></Banner>
+      </div>
       <div className="w-ful mt-3 flex h-fit flex-col gap-5 lg:grid lg:grid-cols-12">
-        <div className="col-span-4 lg:!mb-0">
+        {/* <div className="col-span-4 lg:!mb-0">
           <Banner />
-        </div>
-
+        </div> */}
         <div className="col-span-3 lg:!mb-0">
           <Storage />
+        </div>
+
+        <div className="col-span-4 lg:!mb-0">
+          <ShereProfile></ShereProfile>
         </div>
 
         <div className="z-0 col-span-5 lg:!mb-0">

@@ -2,15 +2,14 @@ import React from "react";
 import Dropdown from "components/dropdown";
 import { FiAlignJustify } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import navbarimage from "assets/img/layout/Navbar.png";
-import { BsArrowBarUp } from "react-icons/bs";
 import { FiSearch } from "react-icons/fi";
 import { RiMoonFill, RiSunFill } from "react-icons/ri";
 import {
   IoMdNotificationsOutline,
   IoMdInformationCircleOutline,
 } from "react-icons/io";
-import avatar from "assets/img/avatars/avatar4.png";
+import avatar from "assets/img/avatars/user-03.png";
+import Glass from "components/glass";
 
 const Navbar = (props) => {
   const { onOpenSidenav, brandText } = props;
@@ -113,7 +112,7 @@ const Navbar = (props) => {
             />
           }
           children={
-            <div className="flex h-48 w-56 flex-col justify-start rounded-[20px] bg-white bg-cover bg-no-repeat shadow-xl shadow-shadow-500 dark:!bg-teal-700 dark:text-white dark:shadow-none">
+            <Glass extra="flex h-48 w-56 flex-col justify-start rounded-[20px] bg-white bg-cover bg-no-repeat shadow-xl shadow-shadow-500  dark:text-white dark:shadow-none">
               <div className="mt-3 ml-4">
                 <div className="flex items-center gap-2">
                   <p className="text-sm font-bold text-teal-700 dark:text-white">
@@ -143,7 +142,7 @@ const Navbar = (props) => {
                   Log Out
                 </a>
               </div>
-            </div>
+            </Glass>
           }
           classNames={"py-2 top-8 -left-[180px] w-max"}
         />

@@ -1,5 +1,5 @@
 {
-  "name": "horizon-ui-tailwind-react",
+  "name": "tailwind-react",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -17,6 +17,7 @@
     "apexcharts": "^3.35.5",
     "daisyui": "^2.51.3",
     "framer-motion": "^7.10.2",
+    "jsvectormap": "^1.5.1",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.0",
     "react-calendar": "^3.9.0",

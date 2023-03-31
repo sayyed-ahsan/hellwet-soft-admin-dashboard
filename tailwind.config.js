@@ -149,14 +149,14 @@ module.exports = {
 
       primaryLight: "#ffffff",
       secounderyLight: "#f3f6fe",
-      thardLight: "",
+      thardLight: "#fafff7",
       lightText: "#1b254b",
 
       brandLight: "#5f3aff",
 
-      primaryDark: "#000000",
-      secounderyDark: "#1f2120",
-      thardDark: "#324154",
+      primaryDark: "#111713",
+      secounderyDark: "#263b2d",
+      thardDark: "#14210c",
       darkText: "#ffffff",
 
       gray: {
